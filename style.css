@@ -6,7 +6,11 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 section {
   position: absolute;
   width: 100%;
@@ -15,6 +19,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 section h1 {
   position: relative;
@@ -28,4 +33,16 @@ section svg {
   top: 0;
   left: 0;
   min-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  }
+  section h1 {
+    font-size: 4em;
+    padding: 15px;
+  }
 }
